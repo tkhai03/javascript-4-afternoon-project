@@ -71,7 +71,7 @@ const bob = new Employee('Bob', 'bob@gmail.com', '01-02-98')
 function Car(make, model, year){
   this.make = make;
   this.model = model;
-  this.yar = year;
+  this.year = year;
   this.move = 0
 
 }
@@ -104,8 +104,12 @@ prius.moveCar();
   
   // Code here
   
+Movie.prototype.changeRating = function(num){
+  return (rating + changRating) / 2 
+}
 
-  
+
+
   ////////// PROBLEM 5 //////////
   
   // Write a constructor function called User. This function should take in 4 parameters called name, age, email, and savedPosts in that order. Name and email will be strings, age will be a number and savedPosts will be an array of objects. These objects will each have 3 properties: id (a number), title (a string), and rating (a number between 1 and 5). These objects are the posts that the user will have saved to their account.
@@ -113,6 +117,11 @@ prius.moveCar();
   // Once the User constructor function is created, write a prototype method for the User function. Name this method addSavedPost. It should take in three parameters: id (a number), title (a string) and rating (a number). Use these parameters to create a new object and add it to the savedPosts array. Make sure to name the properties the same as described previously (id, title, rating).
   
   // Code here
+
+//function User(name, age, email, savedPosts)
+
+
+
   
   ////////// PROBLEM 6 //////////
   
