@@ -15,6 +15,7 @@
 */
 
 // Code here
+return this.move += 10
 
 ////////// PROBLEM 2 //////////
 

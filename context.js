@@ -19,6 +19,17 @@
 
 //Code Here
 
+user = {
+  username: '',
+  email: '',
+  getUsername: function () {
+    return this.username;
+  }
+}
+
+
+
+
 ////////// PROBLEM 2 //////////
 
 /*
@@ -38,6 +49,8 @@ function Animal(name, species, food) {
 }
 
 //Code Here
+
+
 
 ////////// PROBLEM 3 //////////
 
