@@ -15,7 +15,14 @@
 */
 
 // Code here
-return this.move += 10
+
+
+ function CarFactory(make, model) {
+  this.make = make,
+  this.model = model
+ }
+
+
 
 ////////// PROBLEM 2 //////////
 
@@ -36,6 +43,8 @@ function Employee(name, email, hireDate) {
   
   // Code here
   
+const bob = new Employee('Bob', 'bob@gmail.com', '01-02-98')
+
   ////////// PROBLEM 3 //////////
   
   // Do not edit the code below.
@@ -59,6 +68,23 @@ function Employee(name, email, hireDate) {
   
   // Code here
   
+function Car(make, model, year){
+  this.make = make;
+  this.model = model;
+  this.yar = year;
+  this.move = 0
+
+}
+
+
+this.moveCar = function() {
+    this.move += 10
+}
+prius.moveCar();
+
+
+
+
   ////////// PROBLEM 4 //////////
   
   /*
@@ -77,6 +103,8 @@ function Employee(name, email, hireDate) {
   }
   
   // Code here
+  
+
   
   ////////// PROBLEM 5 //////////
   
