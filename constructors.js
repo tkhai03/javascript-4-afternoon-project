@@ -74,13 +74,14 @@ function Car(make, model, year){
   this.year = year;
   this.move = 0
 
+  this.moveCar = function() {
+   return this.move += 10
+  
 }
 
 
-this.moveCar = function() {
-    this.move += 10
 }
-prius.moveCar();
+
 
 
 
@@ -105,8 +106,13 @@ prius.moveCar();
   // Code here
   
 Movie.prototype.changeRating = function(num){
-  return (rating + changRating) / 2 
+  return (this.rating + num) / 2 
 }
+
+const interstellar = new Movie( 'Interstellar', 'drama', 8)
+console.log(interstellar)
+console.log(interstellar.changeRating(4))
+
 
 
 
@@ -118,8 +124,17 @@ Movie.prototype.changeRating = function(num){
   
   // Code here
 
-//function User(name, age, email, savedPosts)
+function User(name, age, email, savedPosts){
+  this.name = name;
+  this.age = age;
+  this.email = email;
+  this.savedPosts = savedPosts
+}
 
+User.prototype.addSavedPost = function (id, title, rating,){
+  let newPost = {id:id, title:title, rating:rating};
+  this.savedPosts.push(newPost)
+}
 
 
   
@@ -129,6 +144,11 @@ Movie.prototype.changeRating = function(num){
   // Write a prototype method for the User constructor function named removeSavedPost that will take in one number parameter representing the post id. Use this id to find and remove the matching object in the savedPosts array.
   
   // Code here
+
+User.prototype.removeSavedPost = function(id){
+  if 
+}
+
   
   ////////// PROBLEM 7 //////////
   
